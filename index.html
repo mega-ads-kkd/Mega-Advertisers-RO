@@ -1,0 +1,195 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"
+        integrity="sha256-lFA8dPmfmR4AQorTbla7C2W0aborhztLt0IQFLAVBTQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
+
+    <!-- <script type="text/javascript" src="FileSaver.js"></script>
+    <script type="text/javascript" src="dom-to-image.min.js"></script> -->
+
+
+    <title>RO</title>
+
+
+</head>
+
+<body>
+    <div id="container-wrapper">
+        <div class="border-wrapper">
+            <div class="wrapper">
+
+                <div>
+                    <div class="logo">
+                        <img src="MegaLogo.png" alt="image!">
+                    </div>
+                    <div class="heading">
+                        <div class="sec1-h1">
+                            <ul>OM SRI SWAMIYE SARANAM AYYAPPA</ul>
+                            <ul class="cell-no">Cell:9848979996</ul>
+                        </div>
+                        <div class="mega-heading">
+                            <ul class="sec1-h2">
+                                MEGA ADVERTISERS
+                            </ul>
+                        </div>
+                        
+                        <ul class="sec1-h3">
+                            D.No.11-289, E-104, JM APTs, Sarpavaram, KAKINADA-5. Kakinada.Dt.,
+                        </ul>
+                    </div>
+
+                </div>
+                <b>
+                    <hr style="width:100%;text-align:left;margin-left:0;border: 1px solid;">
+                </b>
+                <div class="columns">
+                    <div class="col-1">
+                        <div class="mainheading2">To<br>
+                            The Advt. Manager</div>
+                        <input type="text" class="colblock">
+                        <input type="text" class="colblock">
+
+                    </div>
+                    <div class="col-2">
+                        <div class="release-order">
+                            <center><span>RELEASE ORDER</span></center>
+                        </div>
+                        <div class="god"><img src="ayyappa.jpg" alt="image!"> </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mainheading3">
+                            <ul><label for="No" class="theLabels">No.</label></ul>
+                            <ul class="theInputs1"><input id="No" type="text" value=""></ul>
+
+
+                        </div>
+                        <div class="mainheading3">
+                            <ul><label for="date" class="theLabels">Date.</label></ul>
+
+                            <ul class="theInputs1"><input id="date" type="text" size="20"></ul>
+
+                        </div>
+                        <div class="mainheading3">
+
+                            <ul><label for="accno" class="theLabels">A/C No. </label></ul>
+                            <ul class="theInputs1"><input id="accno" type="text" size="8" style="font-size: large;"
+                                    value="207160" size="8" readonly></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="s3">
+                    <div>
+                        <span class="s3-span"><label for="Nameoftheclient" class="s3-label">Name of the
+                                Client</label></span>
+                        <input id="Nameoftheclient" type="text">
+                    </div>
+                    <div>
+                        <span class="s3-span caption"><label for="caption">Caption</label></span>
+                        <input id="caption" type="text">
+                    </div>
+                </div>
+                <div>
+                    <ul class="headings">
+                        <li>Size</li>
+                        <li><span class="non-strikee">Color </span>/ <span class="non-strikee">B&W</span></li>
+                        <li>Position</li>
+                    </ul>
+                    <ul class="boxes">
+                        <li><textarea class="siz-bx" rows="6" cols="35"></textarea></li>
+                        <li><textarea class="cbw" rows="6" cols="35"></textarea></li>
+                        <li><textarea class="pos" rows="6" cols="35"></textarea></li>
+                    </ul>
+                    <ul class="headings">
+                        <li><span class="non-strikee">District</span>/<span class="non-strikee">Editions</span></li>
+                        <li>Schedule Dates </li>
+                        <li>Material</li>
+                    </ul>
+                    <ul class="boxes">
+                        <li><textarea class="de" rows="6" cols="35"></textarea></li>
+                        <li><textarea class="sdbw" rows="6" cols="35"></textarea></li>
+                        <li class="material-li">
+                            <table class="material-table">
+                                <tr>
+                                    <td class="non-strikee">Matter</td>
+                                    <td class="non-strikee">Artful</td>
+                                </tr>
+                                <tr>
+                                    <td class="non-strikee">Photos</td>
+                                    <td class="non-strikee">Logos</td>
+                                </tr>
+                                <tr>
+                                    <input class="material-input" type="text">
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="s3">
+                    <div class="pd">
+                        <span class="pd-span"><label for="paymentdetails" class="s3-label">PAYMENT
+                                DETAILS</label></span>
+                        <table class="payment-table" id="paymentdetails">
+                            <tr>
+                                <td class="non-strikee">Bank Guarantee/</td>
+                                <td class="non-strikee">D.D/</td>
+                                <td class="non-strikee">Cheque/</td>
+                                <td class="non-strikee">T.R. No:</td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="last-div">
+                    <div class="last-div-1">
+                        <div class="spl-ins"><u>SPECIAL INSTRUCTIONS</u></div>
+                        <div><textarea rows="10" cols="45" class="spl-ins"></textarea></div>
+                    </div>
+                    <div class="last-div-2">
+                        <div class="gst-div-span"><span>GST NO.:<br>37AB0PH1638J2ZD</span></div>
+                        <div>
+                            <div>For <b>MEGA ADVERTISERS</b></div>
+                            <div class="sign"><img src="sign.jpg" alt="image!"> </div>
+                            <div>Authorised Signatory</div>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <center><input type="button" id="save-as-png-btn" value="Save as png"></center>
+
+    <div class="dynamic-style">
+        <div>
+            <label for="siz-bx">Size Box - Font Size</label>
+            <input type="number" placeholder="Enter number < 100" id="siz-bx" value="20"><br>
+            <label for="cbw">Color / B&W - Font Size</label>
+            <input type="number" placeholder="Enter number < 100" id="cbw" value="20"><br>
+            <label for="pos">Position - Font Size</label>
+            <input type="number" placeholder="Enter number < 100" id="pos" value="20"><br>
+        </div>
+        <div>
+            <label for="de">District/Editions - Font Size</label>
+            <input type="number" placeholder="Enter number < 100" id="de" value="20"><br>
+            <label for="sdbw">Schedule Dates / B&W - Font Size</label>
+            <input type="number" placeholder="Enter number < 100" id="sdbw" value="20"><br>
+            <label for="spl-ins">Special Instructions - Font Size</label>
+            <input type="number" placeholder="Enter number < 100" id="spl-ins" value="20"><br>
+        </div>
+    </div>
+</body>
+
+</html>
