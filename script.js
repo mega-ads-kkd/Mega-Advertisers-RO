@@ -49,7 +49,7 @@ document.getElementById('save-as-png-btn').addEventListener('click', function() 
       .then(function(dataUrl) {
           var link = document.createElement('a');
           link.href = dataUrl;
-          link.download = 'RO-Dome.png';
+          link.download = 'RO ' + document.getElementById("No").value + '.png';
           link.click();
       })
       .catch(function(error) {
